@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sistema de Gestión Polimórfica de Sensores para IoT: README.md</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Sistema de Gestión Polimórfica de Sensores para IoT
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('index.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">README.md </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1><a class="anchor" id="autotoc_md0"></a>
+Caso de Estudio: Sistema de Gestión Polimórfica de Sensores para IoT (Genérico)</h1>
+<h2><a class="anchor" id="autotoc_md1"></a>
+Definición del Problema a Resolver (El Caso de Estudio)</h2>
+<p>Una empresa de monitoreo de Infraestructura Crítica (IC) necesita un sistema de bajo nivel para registrar, almacenar y procesar lecturas de múltiples tipos de sensores (temperatura, presión, vibración) de manera unificada.</p>
+<p>El sistema debe superar dos grandes limitaciones de diseño:</p>
+<p><b>Rigidez del Tipo de Dato:</b> Las lecturas pueden ser enteras (ej. conteo de vibraciones) o de punto flotante (ej. temperatura), por lo que el contenedor debe ser genérico. <b>Rigidez de la Estructura:</b> Se necesita una estructura de datos que se adapte al número variable de lecturas.</p>
+<p>El objetivo es crear una Jerarquía de Clases Polimórfica que gestione Listas Enlazadas Simples Genéricas (<code>ListaSensor&lt;T&gt;</code>). El diseño debe permitir que cualquier tipo de sensor (subclase) pueda ser agregado a una única lista de gestión, forzando la implementación de métodos esenciales a través de Clases Abstractas.</p>
+<hr  />
+<h2><a class="anchor" id="autotoc_md3"></a>
+Temas Relacionados y Necesarios</h2>
+<p>Para resolver este caso de estudio, los alumnos deberán dominar la integración de los siguientes conceptos:</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">Tema Principal   </th><th class="markdownTableHeadLeft">Concepto a Aplicar    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">POO Avanzada: Jerarquía Polimórfica   </td><td class="markdownTableBodyLeft">Clase Base Abstracta (<code>SensorBase</code>) con métodos virtuales puros. Uso de Herencia para crear sensores específicos (<code>SensorTemperatura</code>, <code>SensorPresion</code>).    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Listas Enlazadas Simples   </td><td class="markdownTableBodyLeft">Implementación de una Lista Enlazada Genérica (<code>ListaSensor&lt;T&gt;</code>) para almacenar las lecturas (<code>T</code>**<code>) de forma dinámica. Gestión de nodos (</code>Nodo&lt;T&gt;<code>) y punteros (*) a mano. \ilinebr &lt;/td&gt; &lt;/tr&gt; &lt;tr class="markdownTableRowOdd"&gt; &lt;td class="markdownTableBodyLeft"&gt; Plantillas (Templates) \ilinebr &lt;/td&gt; &lt;td class="markdownTableBodyLeft"&gt; Uso de</code>template &lt;typename T&gt;<code>para que la lista enlazada y el manejo de lecturas sean independientes del tipo de dato (</code>int<code>,</code>float<code>,</code>double<code>). \ilinebr &lt;/td&gt; &lt;/tr&gt; &lt;tr class="markdownTableRowEven"&gt; &lt;td class="markdownTableBodyLeft"&gt; Punteros y Gestión de Memoria \ilinebr &lt;/td&gt; &lt;td class="markdownTableBodyLeft"&gt; Uso de punteros a la clase base (</code>SensorBase*`) para lograr polimorfismo en la lista de gestión. Implementación de la Regla de los Tres/Cinco para evitar fugas de memoria al trabajar con punteros y nodos.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Obtención de señales desde el puerto serial (Arduino)   </td><td class="markdownTableBodyLeft">Se deberá realizar la captura de señales simuladas desde un dispositivo Arduino desde el puerto serial   </td></tr>
+</table>
+<hr  />
+<h2><a class="anchor" id="autotoc_md5"></a>
+Definición y Detalles del Proceso a Desarrollar</h2>
+<h3><a class="anchor" id="autotoc_md6"></a>
+Diseño de Clases Obligatorias</h3>
+<p>**Clase Base Abstracta (<code>SensorBase</code>):** Propósito: Define la interfaz común para todos los sensores. Método Virtual Puro: <code>virtual void procesarLectura() = 0;</code> y <code>virtual void imprimirInfo() const = 0;</code>. Atributo: <code>protected char nombre[50];</code> (Identificador del sensor).</p>
+<p><b>Clases Derivadas (Concretas):</b> <code>SensorTemperatura : public SensorBase</code>: Representa un sensor que maneja lecturas de tipo <code>float</code>. <code>SensorPresion : public SensorBase</code>: Representa un sensor que maneja lecturas de tipo <code>int</code>.</p>
+<p><b>Clase de Nodo y Lista Genérica:</b> <code>template &lt;typename T&gt; struct Nodo</code>: Estructura o clase que contiene un dato <code>T</code> y un puntero <code>Nodo&lt;T&gt;* siguiente</code>. <code>template &lt;typename T&gt; class ListaSensor</code>: Implementa las funciones de inserción, búsqueda y liberación de la Lista Enlazada Simple para el tipo de dato <code>T</code>.</p>
+<h3><a class="anchor" id="autotoc_md7"></a>
+Proceso de Solución Detallado</h3>
+<ol type="1">
+<li><b>Lista de Gestión Polimórfica:</b> El programa principal debe utilizar una Lista Enlazada Simple <b>NO</b> Genérica (ej., <code>ListaGeneral</code>) que almacene punteros a la clase base (<code>SensorBase*</code>). Esto permite guardar <code>SensorTemperatura*</code> y <code>SensorPresion*</code> juntos.</li>
+<li><p class="startli"><b>Integración de la Lista Genérica:</b> Cada clase concreta (<code>SensorTemperatura</code>, <code>SensorPresion</code>) debe contener como atributo una instancia de su respectiva Lista Genérica.</p>
+<p class="startli"><code>SensorTemperatura</code> contendrá <code>ListaSensor&lt;float&gt; historial;</code> <code>SensorPresion</code> contendrá <code>ListaSensor&lt;int&gt; historial;</code></p>
+</li>
+<li><b>Registro de Lecturas:</b> Implementar un método para cada clase derivada que permita añadir una nueva lectura a su lista interna.</li>
+<li><p class="startli"><b>Procesamiento Polimórfico:</b> La función principal del sistema debe iterar sobre la Lista de Gestión Polimórfica (que almacena <code>SensorBase*</code>) y llamar al método <code>procesarLectura()</code>.</p>
+<p class="startli">Para <code>SensorTemperatura</code>, el método <code>procesarLectura()</code> podría calcular y eliminar el valor más bajo de su lista interna. Para <code>SensorPresion</code>, podría calcular el promedio de las lecturas.</p>
+</li>
+<li><p class="startli"><b>Liberación de Memoria:</b> El destructor del sistema debe:</p>
+<p class="startli">Liberar los nodos de la Lista de Gestión Polimórfica (la lista principal). Para cada <code>SensorBase*</code> liberado, debe invocar al destructor de la clase derivada. Los destructores de las clases derivadas (<code>SensorTemperatura</code>, <code>SensorPresion</code>) son responsables de liberar la memoria de todos los nodos de su <code>ListaSensor&lt;T&gt;</code> interna.</p>
+</li>
+</ol>
+<hr  />
+<h2><a class="anchor" id="autotoc_md9"></a>
+Requerimientos Funcionales y No Funcionales</h2>
+<h3><a class="anchor" id="autotoc_md10"></a>
+Requisitos Funcionales</h3>
+<p><b>Simulación mediante Ardunino</b>: Simular el envío de señales mediante un dispositivo Arduino, el cual deberá enviar los tipos de señales desde el puerto serial. <b>Registro Polimórfico:</b> Permitir registrar cualquier tipo de sensor en una única lista de gestión. <b>Inserción Genérica:</b> Permitir la inserción de lecturas (<code>float</code> o <code>int</code>) en las listas internas de los sensores. <b>Procesamiento Polimórfico:</b> Iterar sobre la lista de gestión y llamar a la función <code>procesarLectura()</code>, la cual ejecuta lógica distinta según el tipo de sensor. <b>Operación de Lista:</b> Implementar las operaciones básicas de la Lista Enlazada Simple: Inserción al final y Búsqueda. <b>Uso de CMake</b>: Se deberá generar una sistema redistribuible mediante el uso de CMake.</p>
+<h3><a class="anchor" id="autotoc_md11"></a>
+Requisitos No Funcionales</h3>
+<p><b>Exclusividad de Punteros:</b> Prohibido el uso de la STL (<code>std::list</code>, <code>std::vector</code>, <code>std::string</code>). El manejo de las listas debe ser completamente manual con punteros. <b>POO Avanzado:</b> Uso estricto de Clases Abstractas y Métodos Virtuales Puros. <b>Regla de los Tres/Cinco:</b> La clase que gestione la Lista Enlazada (y potencialmente las clases que contienen punteros) deben implementar el destructor, constructor de copia y operador de asignación (o al menos el destructor).</p>
+<hr  />
+<h2><a class="anchor" id="autotoc_md13"></a>
+Ejemplo de Entradas y Salidas del Problema en Consola</h2>
+<div class="fragment"><div class="line">Simulación de Interacción</div>
+<div class="line">--- Sistema IoT de Monitoreo Polimórfico ---</div>
+<div class="line"> </div>
+<div class="line">Opción 1: Crear Sensor (Tipo Temp - FLOAT)</div>
+<div class="line">Sensor &#39;T-001&#39; creado e insertado en la lista de gestión.</div>
+<div class="line"> </div>
+<div class="line">Opción 2: Crear Sensor (Tipo Presion - INT)</div>
+<div class="line">Sensor &#39;P-105&#39; creado e insertado en la lista de gestión.</div>
+<div class="line"> </div>
+<div class="line">Opción 3: Registrar Lectura</div>
+<div class="line">ID: T-001. Valor: 45.3 (float)</div>
+<div class="line">ID: T-001. Valor: 42.1 (float)</div>
+<div class="line"> </div>
+<div class="line">Opción 3: Registrar Lectura</div>
+<div class="line">ID: P-105. Valor: 80 (int)</div>
+<div class="line">ID: P-105. Valor: 85 (int)</div>
+<div class="line"> </div>
+<div class="line">Opción 4: Ejecutar Procesamiento Polimórfico</div>
+<div class="line"> </div>
+<div class="line">--- Procesando Sensores ---</div>
+<div class="line">[T-001] (Temperatura): Lectura más baja (42.1) eliminada. Promedio restante: 45.3.</div>
+<div class="line">[P-105] (Presion): Promedio de lecturas: 82.5.</div>
+<div class="line"> </div>
+<div class="line">Opción 5: Cerrar Sistema (Liberar Memoria)</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md14"></a>
+Salida Esperada del Sistema</h2>
+<div class="fragment"><div class="line">...</div>
+<div class="line">[Log] Insertando Nodo&lt;float&gt; en T-001.</div>
+<div class="line">[Log] Insertando Nodo&lt;int&gt; en P-105.</div>
+<div class="line"> </div>
+<div class="line">Opción 4: Ejecutar Procesamiento Polimórfico</div>
+<div class="line"> </div>
+<div class="line">--- Ejecutando Polimorfismo ---</div>
+<div class="line">-&gt; Procesando Sensor T-001...</div>
+<div class="line">[Sensor Temp] Promedio calculado sobre 1 lectura (45.3).</div>
+<div class="line"> </div>
+<div class="line">-&gt; Procesando Sensor P-105...</div>
+<div class="line">[Sensor Presion] Promedio calculado sobre 2 lecturas (82.5).</div>
+<div class="line"> </div>
+<div class="line">Opción 5: Cerrar Sistema (Liberar Memoria)</div>
+<div class="line"> </div>
+<div class="line">--- Liberación de Memoria en Cascada ---</div>
+<div class="line">[Destructor General] Liberando Nodo: T-001.</div>
+<div class="line">  [Destructor Sensor T-001] Liberando Lista Interna...</div>
+<div class="line">    [Log] Nodo&lt;float&gt; 45.3 liberado.</div>
+<div class="line">[Destructor General] Liberando Nodo: P-105.</div>
+<div class="line">  [Destructor Sensor P-105] Liberando Lista Interna...</div>
+<div class="line">    [Log] Nodo&lt;int&gt; 80 liberado.</div>
+<div class="line">    [Log] Nodo&lt;int&gt; 85 liberado.</div>
+<div class="line">Sistema cerrado. Memoria limpia.</div>
+</div><!-- fragment --><hr  />
+<h3><a class="anchor" id="autotoc_md16"></a>
+Temas Adicionales de Investigación Necesarios</h3>
+<p>Para llevar a cabo esta actividad, se deberá investigar y comprender a fondo:</p>
+<ol type="1">
+<li>Regla de los Tres/Cinco con Templates: La implementación obligatoria del Destructor, Constructor de Copia y Operador de Asignación en clases genéricas que gestionan memoria dinámica (como <code>ListaSensor&lt;T&gt;</code>) para evitar fugas y copias superficiales.</li>
+<li>Polimorfismo con Destructores Virtuales: La necesidad crítica de declarar el destructor de la clase base (~SensorBase()) como virtual para garantizar que se llame al destructor correcto de la clase derivada al liberar un puntero de la base, evitando fugas de memoria en las clases derivadas.</li>
+<li>Técnicas de Downcasting Seguro: Si bien no es estrictamente necesario, investigar el uso de dynamic_cast para acceder a propiedades específicas de la subclase si fuera requerido fuera del polimorfismo básico (solo para enriquecer la investigación).</li>
+<li>Sintaxis de Clases y Structs Anidados: Cómo definir el struct Nodo dentro de la ListaSensor para mantener el encapsulamiento.</li>
+<li>Instalación, configuración y uso de CMake para generar sistemas redistribuibles.</li>
+</ol>
+<hr  />
+<h3><a class="anchor" id="autotoc_md18"></a>
+Entregables</h3>
+<ol type="1">
+<li>Código fuente debidamente documentado mediante Doxygen.</li>
+<li>Documentación generada mediante Doxygen.</li>
+<li>Reporte que deberá contener: Introducción Manual técnico (Diseño, desarrllo, componentes)</li>
+<li>Pantallasos de la implementación generada. </li>
+</ol>
+</div></div><!-- PageDoc -->
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>
