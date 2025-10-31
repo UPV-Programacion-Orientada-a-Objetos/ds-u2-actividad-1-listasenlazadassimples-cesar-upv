@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/gestion_sensores.dir/src/main.cpp.o -o gestion_sensores 
