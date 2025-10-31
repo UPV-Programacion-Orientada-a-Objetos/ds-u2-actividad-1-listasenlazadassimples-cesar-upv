@@ -11,7 +11,7 @@
 \graphicspath{{graphics/}}
 
 \title{Sistema de Gestión Polimórfica de Sensores para IoT}
-\author{Reporte Técnico}
+\author{César Euresti\\ \normalsize Estructura de Datos}
 \date{\today}
 
 \begin{document}
@@ -38,19 +38,19 @@ El presente documento describe la solución implementada para el caso de estudio
 El módulo principal (\texttt{src/main.cpp}) ofrece un menú que permite:
 \begin{enumerate}[leftmargin=1.5em]
     \item Crear sensores de temperatura o presión, solicitando un identificador textual.
-    \item Registrar lecturas ya sea manualmente o mediante una línea \texttt{ID,valor} proveniente del puerto serial.
+    \item Registrar lecturas de tres formas: (a) captura manual con validación, (b) pegando una línea \texttt{ID,valor} en consola o (c) escuchando directamente un puerto serial conectado a Arduino/ESP32.
     \item Procesar polimórficamente todas las lecturas registradas.
     \item Liberar la memoria de manera controlada antes de finalizar.
 \end{enumerate}
 
-La compatibilidad con Arduino/ESP32 se valida con el sketch \texttt{arduino/SerialEmitter.ino}, que emite periódicamente lecturas en el formato requerido. El programa principal parsea estas cadenas y delega el registro a cada sensor.
+La compatibilidad con Arduino/ESP32 se valida con el sketch \texttt{arduino/SerialEmitter.ino}, que emite periódicamente lecturas en el formato requerido. El programa principal parsea estas cadenas y delega el registro a cada sensor; en modo de escucha directa se utilizan las funciones POSIX (\texttt{open}, \texttt{termios}, \texttt{select}) para leer en tiempo real y permitir al usuario detener el proceso pulsando \texttt{ENTER} o desconectando el dispositivo. Antes de iniciar la escucha se solicita la ruta del puerto (\texttt{/dev/ttyUSB0}, \texttt{/dev/ttyACM0}, etc.) y se recuerda cerrar otros monitores seriales para evitar conflictos.
 
 \subsection{Componentes Relevantes}
 
 \begin{itemize}[leftmargin=1.5em]
     \item \textbf{CMake:} El archivo \texttt{CMakeLists.txt} compila el binario \texttt{gestion\_sensores}, incluyendo el directorio \texttt{include/}.
     \item \textbf{Doxygen:} La configuración \texttt{Doxyfile} genera la documentación HTML dentro de \texttt{docs/html/}, con comentarios breves en cada archivo y método.
-    \item \textbf{Simulación Serial:} El proyecto añade la carpeta \texttt{arduino/} con el sketch que produce lecturas de ejemplo para integrar el día de la demostración.
+    \item \textbf{Simulación y Lectura Serial:} El proyecto añade la carpeta \texttt{arduino/} con el sketch que produce lecturas de ejemplo y, en el binario principal, una opción de escucha que abre el puerto (por ejemplo \texttt{/dev/ttyUSB0}), configura los parámetros (9600 baudios, 8N1) y procesa cada línea válida. Se alerta al usuario para cerrar monitores seriales externos y se reportan desconexiones y errores de formato mediante \texttt{AuxiliarCli}.
     \item \textbf{Manejo de Memoria:} Todos los destructores informan su actividad con \texttt{AuxiliarCli}, evidenciando la liberación de nodos internos y evitando fugas.
 \end{itemize}
 
@@ -92,7 +92,7 @@ La solución cumple con los requerimientos funcionales y no funcionales descrito
 \begin{itemize}[leftmargin=1.5em]
     \item Uso estricto de listas enlazadas manuales y plantillas para gestionar lecturas.
     \item Jerarquía polimórfica con métodos virtuales puros y destructores seguros.
-    \item Integración con entradas seriales y logs uniformes mediante \texttt{AuxiliarCli}.
+    \item Integración con entradas seriales (manuales y en vivo) y logs uniformes mediante \texttt{AuxiliarCli}.
     \item Documentación automatizada, estructura modular (\texttt{include/}, \texttt{src/}) y soporte CMake.
 \end{itemize}
 

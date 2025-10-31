@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['procesarlectura_0',['procesarlectura',['../classSensorBase.html#a7fbc0a5b444f7d16cd60ba873b8ec8e4',1,'SensorBase::procesarLectura()'],['../classSensorPresion.html#aff696aceb5e619529f911311a35d3c76',1,'SensorPresion::procesarLectura()'],['../classSensorTemperatura.html#a36227dc500c6f8be7866cb0f396894b3',1,'SensorTemperatura::procesarLectura()']]],
-  ['procesarsensores_1',['procesarSensores',['../classListaGeneral.html#ad5f172facc2edda06b9d1e1245db9b59',1,'ListaGeneral']]],
-  ['promedio_2',['promedio',['../classListaSensor.html#a2d6853cb5217e37c9b880ee967126464',1,'ListaSensor']]]
+  ['obtenercabeza_0',['obtenerCabeza',['../classListaSensor.html#a93392a7184f6e6505a62012ceceebe10',1,'ListaSensor']]],
+  ['obtenercadena_1',['obtenerCadena',['../classAuxiliarCli.html#a2a5050906dc248a4e89aec906e839b76',1,'AuxiliarCli']]],
+  ['obtenerdato_2',['obtenerDato',['../classAuxiliarCli.html#a90cf3f0e4cbf035bf84d9f642097dfae',1,'AuxiliarCli']]],
+  ['obtenerminimo_3',['obtenerMinimo',['../classListaSensor.html#ae50baafb161b6b5cfb0ca2bab75682a4',1,'ListaSensor']]],
+  ['obtenernombre_4',['obtenerNombre',['../classSensorBase.html#adb19329ba35a359c664b66575aab7552',1,'SensorBase']]],
+  ['operator_3d_5',['operator=',['../classListaSensor.html#acd2b457d8d9fc55aeb832fd01c00f5a4',1,'ListaSensor']]]
 ];

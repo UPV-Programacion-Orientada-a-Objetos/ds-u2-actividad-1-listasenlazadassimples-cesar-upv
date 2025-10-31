@@ -14,7 +14,8 @@ var searchData=
   ['del_20proceso_20a_20desarrollar_11',['Definición y Detalles del Proceso a Desarrollar',['../index.html#autotoc_md5',1,'']]],
   ['del_20sistema_12',['Salida Esperada del Sistema',['../index.html#autotoc_md14',1,'']]],
   ['desarrollar_13',['Definición y Detalles del Proceso a Desarrollar',['../index.html#autotoc_md5',1,'']]],
-  ['detallado_14',['Proceso de Solución Detallado',['../index.html#autotoc_md7',1,'']]],
-  ['detalles_20del_20proceso_20a_20desarrollar_15',['Definición y Detalles del Proceso a Desarrollar',['../index.html#autotoc_md5',1,'']]],
-  ['diseño_20de_20clases_20obligatorias_16',['Diseño de Clases Obligatorias',['../index.html#autotoc_md6',1,'']]]
+  ['descomponerlineaserial_14',['descomponerLineaSerial',['../main_8cpp.html#a8934d4b757c80a90c07c9118aa3e65a5',1,'main.cpp']]],
+  ['detallado_15',['Proceso de Solución Detallado',['../index.html#autotoc_md7',1,'']]],
+  ['detalles_20del_20proceso_20a_20desarrollar_16',['Definición y Detalles del Proceso a Desarrollar',['../index.html#autotoc_md5',1,'']]],
+  ['diseño_20de_20clases_20obligatorias_17',['Diseño de Clases Obligatorias',['../index.html#autotoc_md6',1,'']]]
 ];

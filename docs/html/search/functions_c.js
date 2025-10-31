@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['_7elistasensor_0',['~ListaSensor',['../classListaSensor.html#a1f0e57e514a2624a2473795bbd8fec8d',1,'ListaSensor']]]
+  ['sensorpresion_0',['SensorPresion',['../classSensorPresion.html#a9febd6b22421efe40ba531d5137bedfd',1,'SensorPresion']]],
+  ['sensortemperatura_1',['SensorTemperatura',['../classSensorTemperatura.html#a13063a6569078d34573d3a3af703e34f',1,'SensorTemperatura']]]
 ];

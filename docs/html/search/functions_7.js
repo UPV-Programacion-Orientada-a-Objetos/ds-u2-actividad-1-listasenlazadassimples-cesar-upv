@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['nodo_0',['Nodo',['../structNodo.html#ac17194a31943a0f8776dfeb56d264568',1,'Nodo']]]
+  ['main_0',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
+  ['mostrarmenu_1',['mostrarMenu',['../main_8cpp.html#ac0aca0f34a52fbe7527a03517bc3347e',1,'main.cpp']]],
+  ['mostrarresumen_2',['mostrarResumen',['../classListaGeneral.html#adfd0ece70c49dcd8698e0427c0cdcee3',1,'ListaGeneral']]]
 ];

@@ -23,7 +23,7 @@ Para resolver este caso de estudio, los alumnos deberán dominar la integración
 | :------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | POO Avanzada: Jerarquía Polimórfica  | Clase Base Abstracta (`SensorBase`) con métodos virtuales puros. Uso de Herencia para crear sensores específicos (`SensorTemperatura`, `SensorPresion`).                                                  |
 | Listas Enlazadas Simples      | Implementación de una Lista Enlazada Genérica (`ListaSensor<T>`) para almacenar las lecturas (`T`**`) de forma dinámica. Gestión de nodos (`Nodo<T>`) y punteros (*) a mano.                                           |
-| Plantillas (Templates)       | Uso de `template <typename T>` para que la lista enlazada y el manejo de lecturas sean independientes del tipo de dato (`int`, `float`, `double`).                                                    |
+| Plantillas (Templates)       | Uso de `template &lt;typename T&gt;` para que la lista enlazada y el manejo de lecturas sean independientes del tipo de dato (`int`, `float`, `double`).                                                    |
 | Punteros y Gestión de Memoria    | Uso de punteros a la clase base (`SensorBase*`) para lograr polimorfismo en la lista de gestión. Implementación de la Regla de los Tres/Cinco para evitar fugas de memoria al trabajar con punteros y nodos.                                |
 | Obtención de señales desde el puerto serial (Arduino)  | Se deberá realizar la captura de señales simuladas desde un dispositivo Arduino desde el puerto serial |
 
@@ -43,8 +43,8 @@ Para resolver este caso de estudio, los alumnos deberán dominar la integración
   * `SensorPresion : public SensorBase`: Representa un sensor que maneja lecturas de tipo `int`.
 
 * **Clase de Nodo y Lista Genérica:**
-  * `template <typename T> struct Nodo`: Estructura o clase que contiene un dato  `T` y un puntero `Nodo<T>* siguiente`.
-  * `template <typename T> class ListaSensor`: Implementa las funciones de inserción, búsqueda y liberación de la Lista Enlazada Simple para el tipo de dato  `T`.
+  * `template &lt;typename T&gt; struct Nodo`: Estructura o clase que contiene un dato  `T` y un puntero `Nodo<T>* siguiente`.
+  * `template &lt;typename T&gt; class ListaSensor`: Implementa las funciones de inserción, búsqueda y liberación de la Lista Enlazada Simple para el tipo de dato  `T`.
 
 ### Proceso de Solución Detallado
 

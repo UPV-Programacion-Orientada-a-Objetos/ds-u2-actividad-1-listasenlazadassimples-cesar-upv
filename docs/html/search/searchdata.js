@@ -3,8 +3,8 @@ var indexSectionsWithContent =
   0: "abcdefgilmnoprsty~",
   1: "alns",
   2: "almns",
-  3: "abceilmnoprs~",
-  4: "dns",
+  3: "abcdeilmnoprs~",
+  4: "dnst",
   5: "mr"
 };
 
