@@ -1,0 +1,3 @@
+/home/nebu/Documents/upv/4to/dsa/gh-classroom/ds-u2-actividad-1-listasenlazadassimples-cesar-upv/build/CMakeFiles/gestion_sensores.dir
+/home/nebu/Documents/upv/4to/dsa/gh-classroom/ds-u2-actividad-1-listasenlazadassimples-cesar-upv/build/CMakeFiles/edit_cache.dir
+/home/nebu/Documents/upv/4to/dsa/gh-classroom/ds-u2-actividad-1-listasenlazadassimples-cesar-upv/build/CMakeFiles/rebuild_cache.dir

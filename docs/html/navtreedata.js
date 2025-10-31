@@ -26,6 +26,14 @@ var NAVTREE =
 [
   [ "Sistema de Gestión Polimórfica de Sensores para IoT", "index.html", [
     [ "README.md", "index.html", "index" ],
+    [ "Clases", "annotated.html", [
+      [ "Lista de clases", "annotated.html", "annotated_dup" ],
+      [ "Índice de clases", "classes.html", null ],
+      [ "Miembros de clases", "functions.html", [
+        [ "Todos", "functions.html", null ],
+        [ "Funciones", "functions_func.html", null ]
+      ] ]
+    ] ],
     [ "Archivos", "files.html", [
       [ "Lista de archivos", "files.html", "files_dup" ]
     ] ]
@@ -34,7 +42,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"dir_68267d1309a1af8e8297ef4c3efbcdba.html"
+"AuxiliarCli_8h.html"
 ];
 
 var SYNCONMSG = 'pulsar para deshabilitar sincronización';
