@@ -1,5 +1,6 @@
 var classAuxiliarCli =
 [
-    [ "imprimirLog", "classAuxiliarCli.html#a454faae8442b856f2bbc1b7cc41a979c", null ],
-    [ "obtenerDato", "classAuxiliarCli.html#ae868bd1465de9f09b63dad012dad5e38", null ]
+    [ "imprimirLog", "classAuxiliarCli.html#a12e3201cf8b5a13560b03769f99213df", null ],
+    [ "obtenerCadena", "classAuxiliarCli.html#a2a5050906dc248a4e89aec906e839b76", null ],
+    [ "obtenerDato", "classAuxiliarCli.html#a90cf3f0e4cbf035bf84d9f642097dfae", null ]
 ];

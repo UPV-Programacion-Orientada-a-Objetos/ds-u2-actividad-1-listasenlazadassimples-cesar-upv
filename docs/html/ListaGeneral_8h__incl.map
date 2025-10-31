@@ -1,0 +1,17 @@
+<map id="include/ListaGeneral.h" name="include/ListaGeneral.h">
+<area shape="rect" id="Node000001" title="Lista enlazada que almacena punteros a sensores polimórficos." alt="" coords="25,5,192,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="131,152,198,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,33,49,46,24,63,9,82,9,92,13,103,34,124,61,140,89,150,118,156,116,162,88,155,58,145,31,128,9,105,3,93,4,80,20,59,46,42,75,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="23,79,84,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="101,33,73,69,69,66,97,29"/>
+<area shape="rect" id="Node000004" href="$SensorBase_8h.html" title="Interfaz abstracta para sensores administrados por el sistema." alt="" coords="109,79,220,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="120,29,149,66,145,69,115,33"/>
+<area shape="rect" id="Node000005" href="$AuxiliarCli_8h.html" title="Utilidades para interacción en consola y mensajes coloreados." alt="" coords="244,79,346,104"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="139,28,253,71,251,76,137,33"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="167,104,167,138,162,138,162,104"/>
+<area shape="poly" id="edge8_Node000005_Node000002" title=" " alt="" coords="275,106,199,148,196,143,273,102"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="238,152,318,177"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="295,105,286,140,281,138,289,104"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="342,152,400,177"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="309,102,350,141,347,144,305,106"/>
+</map>

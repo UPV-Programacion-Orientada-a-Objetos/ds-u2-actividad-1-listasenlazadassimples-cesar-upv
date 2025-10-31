@@ -1,0 +1,5 @@
+<map id="include/SensorTemperatura.h" name="include/SensorTemperatura.h">
+<area shape="rect" id="Node000001" title="Sensor concreto que gestiona lecturas de temperatura (float)." alt="" coords="5,5,216,31"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html" title="Punto de entrada del sistema IoT polimórfico basado en listas enlazadas." alt="" coords="58,79,163,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,44,113,79,108,79,108,44"/>
+</map>

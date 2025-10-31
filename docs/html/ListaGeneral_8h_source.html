@@ -97,12 +97,186 @@ $(document).ready(function(){initNavTree('ListaGeneral_8h_source.html',''); init
   <div class="headertitle"><div class="title">ListaGeneral.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"></div><!-- fragment --></div><!-- contents -->
+<a href="ListaGeneral_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef LISTAGENERAL_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define LISTAGENERAL_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;cstring&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;cstdio&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="SensorBase_8h.html">SensorBase.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="AuxiliarCli_8h.html">AuxiliarCli.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classListaGeneral.html">   16</a></span><span class="keyword">class </span><a class="code hl_class" href="classListaGeneral.html">ListaGeneral</a></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_class" href="classListaGeneral.html">ListaGeneral</a>() : cabeza(<span class="keyword">nullptr</span>) {}</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_class" href="classListaGeneral.html">~ListaGeneral</a>()</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <a class="code hl_function" href="classListaGeneral.html#ab12e1812387a7c5d37c21f9fffbc98f3">liberar</a>();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    }</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="}">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classListaGeneral.html#a1d0d70639b1dfcc5022f9dd936e76268">   31</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classListaGeneral.html#a1d0d70639b1dfcc5022f9dd936e76268">insertar</a>(<a class="code hl_class" href="classSensorBase.html">SensorBase</a>* sensor)</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <a class="code hl_class" href="classAuxiliarCli.html">AuxiliarCli</a> cli;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keywordflow">if</span> (!sensor)</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            cli.<a class="code hl_function" href="classAuxiliarCli.html#a12e3201cf8b5a13560b03769f99213df">imprimirLog</a>(<span class="stringliteral">&quot;WARNING&quot;</span>, <span class="stringliteral">&quot;Intento de insertar un sensor nulo.&quot;</span>);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="classListaGeneral.html#a90a3291e14303442ecae55c17ed974a1">buscarPorNombre</a>(sensor-&gt;<a class="code hl_function" href="classSensorBase.html#adb19329ba35a359c664b66575aab7552">obtenerNombre</a>()))</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keywordtype">char</span> mensaje[160];</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            std::snprintf(mensaje, <span class="keyword">sizeof</span>(mensaje), <span class="stringliteral">&quot;Sensor &#39;%s&#39; ya existe en la lista.&quot;</span>, sensor-&gt;<a class="code hl_function" href="classSensorBase.html#adb19329ba35a359c664b66575aab7552">obtenerNombre</a>());</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            cli.<a class="code hl_function" href="classAuxiliarCli.html#a12e3201cf8b5a13560b03769f99213df">imprimirLog</a>(<span class="stringliteral">&quot;WARNING&quot;</span>, mensaje);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        NodoGeneral* nuevo = <span class="keyword">new</span> NodoGeneral(sensor);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordflow">if</span> (!cabeza)</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            cabeza = nuevo;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            NodoGeneral* actual = cabeza;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keywordflow">while</span> (actual-&gt;siguiente)</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                actual = actual-&gt;siguiente;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            actual-&gt;siguiente = nuevo;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordtype">char</span> mensaje[160];</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        std::snprintf(mensaje, <span class="keyword">sizeof</span>(mensaje), <span class="stringliteral">&quot;Sensor &#39;%s&#39; insertado en la lista de gestión.&quot;</span>, sensor-&gt;<a class="code hl_function" href="classSensorBase.html#adb19329ba35a359c664b66575aab7552">obtenerNombre</a>());</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        cli.<a class="code hl_function" href="classAuxiliarCli.html#a12e3201cf8b5a13560b03769f99213df">imprimirLog</a>(<span class="stringliteral">&quot;SUCCESS&quot;</span>, mensaje);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    }</div>
+</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classListaGeneral.html#a90a3291e14303442ecae55c17ed974a1">   74</a></span>    <a class="code hl_class" href="classSensorBase.html">SensorBase</a>* <a class="code hl_function" href="classListaGeneral.html#a90a3291e14303442ecae55c17ed974a1">buscarPorNombre</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keywordtype">id</span>)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordflow">if</span> (!<span class="keywordtype">id</span>)</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        NodoGeneral* actual = cabeza;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">while</span> (actual)</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <span class="keywordflow">if</span> (std::strcmp(actual-&gt;sensor-&gt;obtenerNombre(), <span class="keywordtype">id</span>) == 0)</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            {</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                <span class="keywordflow">return</span> actual-&gt;sensor;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            actual = actual-&gt;siguiente;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
+</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="foldopen" id="foldopen00096" data-start="{" data-end="}">
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="classListaGeneral.html#a29392d21aed080f3959483b71cfda501">   96</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classListaGeneral.html#a29392d21aed080f3959483b71cfda501">estaVacia</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="keywordflow">return</span> cabeza == <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    }</div>
+</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="foldopen" id="foldopen00104" data-start="{" data-end="}">
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="classListaGeneral.html#ad5f172facc2edda06b9d1e1245db9b59">  104</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classListaGeneral.html#ad5f172facc2edda06b9d1e1245db9b59">procesarSensores</a>()</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    {</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <a class="code hl_class" href="classAuxiliarCli.html">AuxiliarCli</a> cli;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <span class="keywordflow">if</span> (!cabeza)</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        {</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            cli.<a class="code hl_function" href="classAuxiliarCli.html#a12e3201cf8b5a13560b03769f99213df">imprimirLog</a>(<span class="stringliteral">&quot;WARNING&quot;</span>, <span class="stringliteral">&quot;No hay sensores registrados para procesar.&quot;</span>);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        }</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        NodoGeneral* actual = cabeza;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        <span class="keywordflow">while</span> (actual)</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        {</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            <span class="keywordtype">char</span> mensaje[160];</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            std::snprintf(mensaje, <span class="keyword">sizeof</span>(mensaje), <span class="stringliteral">&quot;-&gt; Procesando Sensor %s...&quot;</span>, actual-&gt;sensor-&gt;obtenerNombre());</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            cli.<a class="code hl_function" href="classAuxiliarCli.html#a12e3201cf8b5a13560b03769f99213df">imprimirLog</a>(<span class="stringliteral">&quot;STATUS&quot;</span>, mensaje);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            actual-&gt;sensor-&gt;procesarLectura();</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            actual = actual-&gt;siguiente;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        }</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    }</div>
+</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="foldopen" id="foldopen00127" data-start="{" data-end="}">
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="classListaGeneral.html#adfd0ece70c49dcd8698e0427c0cdcee3">  127</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classListaGeneral.html#adfd0ece70c49dcd8698e0427c0cdcee3">mostrarResumen</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <span class="keywordflow">if</span> (!cabeza)</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        {</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;Lista de sensores vacía.&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        }</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        NodoGeneral* actual = cabeza;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        <span class="keywordflow">while</span> (actual)</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        {</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            actual-&gt;sensor-&gt;imprimirInfo();</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            actual = actual-&gt;siguiente;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        }</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    }</div>
+</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="foldopen" id="foldopen00146" data-start="{" data-end="}">
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="classListaGeneral.html#ab12e1812387a7c5d37c21f9fffbc98f3">  146</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classListaGeneral.html#ab12e1812387a7c5d37c21f9fffbc98f3">liberar</a>()</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    {</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        <a class="code hl_class" href="classAuxiliarCli.html">AuxiliarCli</a> cli;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        NodoGeneral* actual = cabeza;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        <span class="keywordflow">while</span> (actual)</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        {</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            <span class="keywordtype">char</span> mensaje[160];</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            std::snprintf(mensaje, <span class="keyword">sizeof</span>(mensaje), <span class="stringliteral">&quot;[Destructor General] Liberando Nodo: %s.&quot;</span>, actual-&gt;sensor-&gt;obtenerNombre());</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            cli.<a class="code hl_function" href="classAuxiliarCli.html#a12e3201cf8b5a13560b03769f99213df">imprimirLog</a>(<span class="stringliteral">&quot;STATUS&quot;</span>, mensaje);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            NodoGeneral* siguiente = actual-&gt;siguiente;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>            <span class="keyword">delete</span> actual-&gt;sensor;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>            <span class="keyword">delete</span> actual;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            actual = siguiente;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        }</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        cabeza = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    }</div>
+</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="keyword">struct </span>NodoGeneral</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    {</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <a class="code hl_class" href="classSensorBase.html">SensorBase</a>* sensor;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        NodoGeneral* siguiente;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        <span class="keyword">explicit</span> NodoGeneral(<a class="code hl_class" href="classSensorBase.html">SensorBase</a>* ptr) : sensor(ptr), siguiente(nullptr) {}</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    };</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    NodoGeneral* cabeza;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>};</div>
+</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aAuxiliarCli_8h_html"><div class="ttname"><a href="AuxiliarCli_8h.html">AuxiliarCli.h</a></div><div class="ttdoc">Utilidades para interacción en consola y mensajes coloreados.</div></div>
+<div class="ttc" id="aSensorBase_8h_html"><div class="ttname"><a href="SensorBase_8h.html">SensorBase.h</a></div><div class="ttdoc">Interfaz abstracta para sensores administrados por el sistema.</div></div>
+<div class="ttc" id="aclassAuxiliarCli_html"><div class="ttname"><a href="classAuxiliarCli.html">AuxiliarCli</a></div><div class="ttdoc">Auxilia a la interfaz de consola con logs y lectura validada.</div><div class="ttdef"><b>Definition</b> <a href="AuxiliarCli_8h_source.html#l00015">AuxiliarCli.h:16</a></div></div>
+<div class="ttc" id="aclassAuxiliarCli_html_a12e3201cf8b5a13560b03769f99213df"><div class="ttname"><a href="classAuxiliarCli.html#a12e3201cf8b5a13560b03769f99213df">AuxiliarCli::imprimirLog</a></div><div class="ttdeci">void imprimirLog(const char *tipo, const char *msj)</div><div class="ttdoc">Imprime un mensaje con color según la etiqueta proporcionada.</div><div class="ttdef"><b>Definition</b> <a href="AuxiliarCli_8h_source.html#l00025">AuxiliarCli.h:25</a></div></div>
+<div class="ttc" id="aclassListaGeneral_html"><div class="ttname"><a href="classListaGeneral.html">ListaGeneral</a></div><div class="ttdoc">Administra la colección polimórfica de sensores.</div><div class="ttdef"><b>Definition</b> <a href="ListaGeneral_8h_source.html#l00016">ListaGeneral.h:17</a></div></div>
+<div class="ttc" id="aclassListaGeneral_html_a1d0d70639b1dfcc5022f9dd936e76268"><div class="ttname"><a href="classListaGeneral.html#a1d0d70639b1dfcc5022f9dd936e76268">ListaGeneral::insertar</a></div><div class="ttdeci">bool insertar(SensorBase *sensor)</div><div class="ttdoc">Inserta un sensor al final de la lista si no está duplicado.</div><div class="ttdef"><b>Definition</b> <a href="ListaGeneral_8h_source.html#l00031">ListaGeneral.h:31</a></div></div>
+<div class="ttc" id="aclassListaGeneral_html_a29392d21aed080f3959483b71cfda501"><div class="ttname"><a href="classListaGeneral.html#a29392d21aed080f3959483b71cfda501">ListaGeneral::estaVacia</a></div><div class="ttdeci">bool estaVacia() const</div><div class="ttdoc">Indica si la lista está vacía.</div><div class="ttdef"><b>Definition</b> <a href="ListaGeneral_8h_source.html#l00096">ListaGeneral.h:96</a></div></div>
+<div class="ttc" id="aclassListaGeneral_html_a90a3291e14303442ecae55c17ed974a1"><div class="ttname"><a href="classListaGeneral.html#a90a3291e14303442ecae55c17ed974a1">ListaGeneral::buscarPorNombre</a></div><div class="ttdeci">SensorBase * buscarPorNombre(const char *id) const</div><div class="ttdoc">Busca un sensor por identificador.</div><div class="ttdef"><b>Definition</b> <a href="ListaGeneral_8h_source.html#l00074">ListaGeneral.h:74</a></div></div>
+<div class="ttc" id="aclassListaGeneral_html_ab12e1812387a7c5d37c21f9fffbc98f3"><div class="ttname"><a href="classListaGeneral.html#ab12e1812387a7c5d37c21f9fffbc98f3">ListaGeneral::liberar</a></div><div class="ttdeci">void liberar()</div><div class="ttdoc">Libera todos los nodos y sensores almacenados.</div><div class="ttdef"><b>Definition</b> <a href="ListaGeneral_8h_source.html#l00146">ListaGeneral.h:146</a></div></div>
+<div class="ttc" id="aclassListaGeneral_html_ad5f172facc2edda06b9d1e1245db9b59"><div class="ttname"><a href="classListaGeneral.html#ad5f172facc2edda06b9d1e1245db9b59">ListaGeneral::procesarSensores</a></div><div class="ttdeci">void procesarSensores()</div><div class="ttdoc">Recorre la lista e invoca procesarLectura() de cada sensor.</div><div class="ttdef"><b>Definition</b> <a href="ListaGeneral_8h_source.html#l00104">ListaGeneral.h:104</a></div></div>
+<div class="ttc" id="aclassListaGeneral_html_adfd0ece70c49dcd8698e0427c0cdcee3"><div class="ttname"><a href="classListaGeneral.html#adfd0ece70c49dcd8698e0427c0cdcee3">ListaGeneral::mostrarResumen</a></div><div class="ttdeci">void mostrarResumen() const</div><div class="ttdoc">Imprime un resumen simple de los sensores registrados.</div><div class="ttdef"><b>Definition</b> <a href="ListaGeneral_8h_source.html#l00127">ListaGeneral.h:127</a></div></div>
+<div class="ttc" id="aclassSensorBase_html"><div class="ttname"><a href="classSensorBase.html">SensorBase</a></div><div class="ttdoc">Clase base abstracta para cualquier sensor del sistema.</div><div class="ttdef"><b>Definition</b> <a href="SensorBase_8h_source.html#l00013">SensorBase.h:14</a></div></div>
+<div class="ttc" id="aclassSensorBase_html_adb19329ba35a359c664b66575aab7552"><div class="ttname"><a href="classSensorBase.html#adb19329ba35a359c664b66575aab7552">SensorBase::obtenerNombre</a></div><div class="ttdeci">const char * obtenerNombre() const</div><div class="ttdoc">Devuelve el identificador del sensor.</div><div class="ttdef"><b>Definition</b> <a href="SensorBase_8h_source.html#l00043">SensorBase.h:43</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><b>ListaGeneral.h</b></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="ListaGeneral_8h.html">ListaGeneral.h</a></li>
     <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['readme_20md_0',['README.md',['../index.html',1,'']]],
-  ['relacionados_20y_20necesarios_1',['Temas Relacionados y Necesarios',['../index.html#autotoc_md3',1,'']]],
-  ['requerimientos_20funcionales_20y_20no_20funcionales_2',['Requerimientos Funcionales y No Funcionales',['../index.html#autotoc_md9',1,'']]],
-  ['requisitos_20funcionales_3',['Requisitos Funcionales',['../index.html#autotoc_md10',1,'']]],
-  ['requisitos_20no_20funcionales_4',['Requisitos No Funcionales',['../index.html#autotoc_md11',1,'']]],
-  ['resolver_20el_20caso_20de_20estudio_5',['Definición del Problema a Resolver (El Caso de Estudio)',['../index.html#autotoc_md1',1,'']]]
+  ['obligatorias_0',['Diseño de Clases Obligatorias',['../index.html#autotoc_md6',1,'']]],
+  ['obtenercabeza_1',['obtenerCabeza',['../classListaSensor.html#a93392a7184f6e6505a62012ceceebe10',1,'ListaSensor']]],
+  ['obtenercadena_2',['obtenerCadena',['../classAuxiliarCli.html#a2a5050906dc248a4e89aec906e839b76',1,'AuxiliarCli']]],
+  ['obtenerdato_3',['obtenerDato',['../classAuxiliarCli.html#a90cf3f0e4cbf035bf84d9f642097dfae',1,'AuxiliarCli']]],
+  ['obtenerminimo_4',['obtenerMinimo',['../classListaSensor.html#ae50baafb161b6b5cfb0ca2bab75682a4',1,'ListaSensor']]],
+  ['obtenernombre_5',['obtenerNombre',['../classSensorBase.html#adb19329ba35a359c664b66575aab7552',1,'SensorBase']]],
+  ['operator_3d_6',['operator=',['../classListaSensor.html#acd2b457d8d9fc55aeb832fd01c00f5a4',1,'ListaSensor']]]
 ];

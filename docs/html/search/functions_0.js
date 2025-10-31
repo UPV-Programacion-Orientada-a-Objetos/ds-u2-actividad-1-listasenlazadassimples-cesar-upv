@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['imprimirlog_0',['imprimirLog',['../classAuxiliarCli.html#a454faae8442b856f2bbc1b7cc41a979c',1,'AuxiliarCli']]]
+  ['asignarnombre_0',['asignarNombre',['../classSensorBase.html#a7ff6fe38a284eb5fb9f55e935f6faba0',1,'SensorBase']]]
 ];

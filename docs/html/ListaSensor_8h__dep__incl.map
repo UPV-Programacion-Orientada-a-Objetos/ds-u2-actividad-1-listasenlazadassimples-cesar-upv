@@ -1,0 +1,10 @@
+<map id="include/ListaSensor.h" name="include/ListaSensor.h">
+<area shape="rect" id="Node000001" title="Lista enlazada simple genérica para lecturas de sensores." alt="" coords="124,5,283,31"/>
+<area shape="rect" id="Node000002" href="$SensorPresion_8h.html" title="Sensor concreto que gestiona lecturas de presión (int)." alt="" coords="5,79,183,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,40,113,81,110,76,173,36"/>
+<area shape="rect" id="Node000004" href="$SensorTemperatura_8h.html" title="Sensor concreto que gestiona lecturas de temperatura (float)." alt="" coords="207,79,418,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="234,36,296,76,293,81,231,40"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html" title="Punto de entrada del sistema IoT polimórfico basado en listas enlazadas." alt="" coords="151,152,256,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="124,109,187,150,184,154,122,114"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="285,114,223,154,220,150,282,109"/>
+</map>

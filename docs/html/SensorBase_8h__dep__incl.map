@@ -1,0 +1,13 @@
+<map id="include/SensorBase.h" name="include/SensorBase.h">
+<area shape="rect" id="Node000001" title="Interfaz abstracta para sensores administrados por el sistema." alt="" coords="204,5,365,31"/>
+<area shape="rect" id="Node000002" href="$ListaGeneral_8h.html" title="Lista enlazada que almacena punteros a sensores polimórficos." alt="" coords="5,79,172,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,38,122,81,120,76,240,33"/>
+<area shape="rect" id="Node000004" href="$SensorPresion_8h.html" title="Sensor concreto que gestiona lecturas de presión (int)." alt="" coords="196,79,373,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="287,44,287,79,282,79,282,44"/>
+<area shape="rect" id="Node000005" href="$SensorTemperatura_8h.html" title="Sensor concreto que gestiona lecturas de temperatura (float)." alt="" coords="398,79,609,104"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="334,32,469,76,467,81,332,37"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html" title="Punto de entrada del sistema IoT polimórfico basado en listas enlazadas." alt="" coords="232,152,337,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="134,106,254,149,252,154,132,111"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="287,118,287,152,282,152,282,118"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="456,111,321,154,319,149,454,106"/>
+</map>

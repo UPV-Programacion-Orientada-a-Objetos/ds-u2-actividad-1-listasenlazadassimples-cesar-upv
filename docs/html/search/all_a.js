@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['para_20iot_20genérico_0',['Caso de Estudio: Sistema de Gestión Polimórfica de Sensores para IoT (Genérico)',['../index.html#autotoc_md0',1,'']]],
-  ['polimórfica_20de_20sensores_20para_20iot_20genérico_1',['Caso de Estudio: Sistema de Gestión Polimórfica de Sensores para IoT (Genérico)',['../index.html#autotoc_md0',1,'']]],
-  ['problema_20a_20resolver_20el_20caso_20de_20estudio_2',['Definición del Problema a Resolver (El Caso de Estudio)',['../index.html#autotoc_md1',1,'']]],
-  ['problema_20en_20consola_3',['Ejemplo de Entradas y Salidas del Problema en Consola',['../index.html#autotoc_md13',1,'']]],
-  ['proceso_20a_20desarrollar_4',['Definición y Detalles del Proceso a Desarrollar',['../index.html#autotoc_md5',1,'']]],
-  ['proceso_20de_20solución_20detallado_5',['Proceso de Solución Detallado',['../index.html#autotoc_md7',1,'']]]
+  ['necesarios_0',['necesarios',['../index.html#autotoc_md16',1,'Temas Adicionales de Investigación Necesarios'],['../index.html#autotoc_md3',1,'Temas Relacionados y Necesarios']]],
+  ['no_20funcionales_1',['no funcionales',['../index.html#autotoc_md9',1,'Requerimientos Funcionales y No Funcionales'],['../index.html#autotoc_md11',1,'Requisitos No Funcionales']]],
+  ['nodo_2',['nodo',['../structNodo.html',1,'Nodo&lt; T &gt;'],['../structNodo.html#ac17194a31943a0f8776dfeb56d264568',1,'Nodo::Nodo()']]],
+  ['nodo_2eh_3',['Nodo.h',['../Nodo_8h.html',1,'']]],
+  ['nodo_3c_20float_20_3e_4',['Nodo&lt; float &gt;',['../structNodo.html',1,'']]],
+  ['nodo_3c_20int_20_3e_5',['Nodo&lt; int &gt;',['../structNodo.html',1,'']]],
+  ['nombre_6',['nombre',['../classSensorBase.html#a843ba88809ed7b78942a0a4b1c484cf5',1,'SensorBase']]]
 ];

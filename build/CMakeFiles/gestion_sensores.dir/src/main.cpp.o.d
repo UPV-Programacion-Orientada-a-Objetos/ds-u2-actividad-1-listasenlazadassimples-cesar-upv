@@ -149,6 +149,14 @@ CMakeFiles/gestion_sensores.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc \
+ /usr/include/c++/13/bits/istream.tcc /usr/include/c++/13/cstring \
+ /usr/include/string.h /usr/include/strings.h \
  /home/nebu/Documents/upv/4to/dsa/gh-classroom/ds-u2-actividad-1-listasenlazadassimples-cesar-upv/include/AuxiliarCli.h \
- /usr/include/c++/13/limits
+ /usr/include/c++/13/limits \
+ /home/nebu/Documents/upv/4to/dsa/gh-classroom/ds-u2-actividad-1-listasenlazadassimples-cesar-upv/include/ListaGeneral.h \
+ /home/nebu/Documents/upv/4to/dsa/gh-classroom/ds-u2-actividad-1-listasenlazadassimples-cesar-upv/include/SensorBase.h \
+ /home/nebu/Documents/upv/4to/dsa/gh-classroom/ds-u2-actividad-1-listasenlazadassimples-cesar-upv/include/AuxiliarCli.h \
+ /home/nebu/Documents/upv/4to/dsa/gh-classroom/ds-u2-actividad-1-listasenlazadassimples-cesar-upv/include/SensorTemperatura.h \
+ /home/nebu/Documents/upv/4to/dsa/gh-classroom/ds-u2-actividad-1-listasenlazadassimples-cesar-upv/include/ListaSensor.h \
+ /home/nebu/Documents/upv/4to/dsa/gh-classroom/ds-u2-actividad-1-listasenlazadassimples-cesar-upv/include/Nodo.h \
+ /home/nebu/Documents/upv/4to/dsa/gh-classroom/ds-u2-actividad-1-listasenlazadassimples-cesar-upv/include/SensorPresion.h

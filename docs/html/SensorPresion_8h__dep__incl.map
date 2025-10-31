@@ -1,0 +1,5 @@
+<map id="include/SensorPresion.h" name="include/SensorPresion.h">
+<area shape="rect" id="Node000001" title="Sensor concreto que gestiona lecturas de presión (int)." alt="" coords="5,5,183,31"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html" title="Punto de entrada del sistema IoT polimórfico basado en listas enlazadas." alt="" coords="41,79,147,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,44,97,79,91,79,91,44"/>
+</map>

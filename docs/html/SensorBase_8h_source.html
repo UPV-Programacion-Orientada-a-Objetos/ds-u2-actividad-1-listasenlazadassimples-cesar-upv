@@ -97,12 +97,71 @@ $(document).ready(function(){initNavTree('SensorBase_8h_source.html',''); initRe
   <div class="headertitle"><div class="title">SensorBase.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"></div><!-- fragment --></div><!-- contents -->
+<a href="SensorBase_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifndef SENSORBASE_H</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#define SENSORBASE_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;cstring&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classSensorBase.html">   13</a></span><span class="keyword">class </span><a class="code hl_class" href="classSensorBase.html">SensorBase</a></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_class" href="classSensorBase.html">SensorBase</a>()</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <a class="code hl_variable" href="classSensorBase.html#a843ba88809ed7b78942a0a4b1c484cf5">nombre</a>[0] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    }</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classSensorBase.html">~SensorBase</a>() {}</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classSensorBase.html#a7ff6fe38a284eb5fb9f55e935f6faba0">   27</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classSensorBase.html#a7ff6fe38a284eb5fb9f55e935f6faba0">asignarNombre</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_struct" href="structNodo.html">nuevoNombre</a>)</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordflow">if</span> (!<a class="code hl_struct" href="structNodo.html">nuevoNombre</a>)</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <a class="code hl_variable" href="classSensorBase.html#a843ba88809ed7b78942a0a4b1c484cf5">nombre</a>[0] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <a class="code hl_function" href="structNodo.html#ac17194a31943a0f8776dfeb56d264568">std::strncpy</a>(<a class="code hl_variable" href="classSensorBase.html#a843ba88809ed7b78942a0a4b1c484cf5">nombre</a>, <a class="code hl_struct" href="structNodo.html">nuevoNombre</a>, <span class="keyword">sizeof</span>(<a class="code hl_variable" href="classSensorBase.html#a843ba88809ed7b78942a0a4b1c484cf5">nombre</a>) - 1);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <a class="code hl_variable" href="classSensorBase.html#a843ba88809ed7b78942a0a4b1c484cf5">nombre</a>[<span class="keyword">sizeof</span>(<a class="code hl_variable" href="classSensorBase.html#a843ba88809ed7b78942a0a4b1c484cf5">nombre</a>) - 1] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classSensorBase.html#adb19329ba35a359c664b66575aab7552">   43</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="classSensorBase.html#adb19329ba35a359c664b66575aab7552">obtenerNombre</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classSensorBase.html#a843ba88809ed7b78942a0a4b1c484cf5">nombre</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
+</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classSensorBase.html#a7cf3aeb12b330c500e2a5136fa020eec">   49</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classSensorBase.html#a7cf3aeb12b330c500e2a5136fa020eec">imprimirInfo</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classSensorBase.html#a5c28ab5c9f2256ebc45142cd558916db">   51</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classSensorBase.html#a5c28ab5c9f2256ebc45142cd558916db">registrarLecturaInteractiva</a>() = 0;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classSensorBase.html#ace18410433e5b85dcd48e37a81e24859">   53</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classSensorBase.html#ace18410433e5b85dcd48e37a81e24859">registrarLecturaDesdeCadena</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_struct" href="structNodo.html">valorComoTexto</a>) = 0;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classSensorBase.html#a7fbc0a5b444f7d16cd60ba873b8ec8e4">   55</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classSensorBase.html#a7fbc0a5b444f7d16cd60ba873b8ec8e4">procesarLectura</a>() = 0;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classSensorBase.html#a843ba88809ed7b78942a0a4b1c484cf5">   59</a></span>    <span class="keywordtype">char</span> <a class="code hl_variable" href="classSensorBase.html#a843ba88809ed7b78942a0a4b1c484cf5">nombre</a>[50];</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>};</div>
+</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassSensorBase_html"><div class="ttname"><a href="classSensorBase.html">SensorBase</a></div><div class="ttdoc">Clase base abstracta para cualquier sensor del sistema.</div><div class="ttdef"><b>Definition</b> <a href="SensorBase_8h_source.html#l00013">SensorBase.h:14</a></div></div>
+<div class="ttc" id="aclassSensorBase_html_a5c28ab5c9f2256ebc45142cd558916db"><div class="ttname"><a href="classSensorBase.html#a5c28ab5c9f2256ebc45142cd558916db">SensorBase::registrarLecturaInteractiva</a></div><div class="ttdeci">virtual void registrarLecturaInteractiva()=0</div><div class="ttdoc">Solicita una lectura desde la consola y la almacena.</div></div>
+<div class="ttc" id="aclassSensorBase_html_a7cf3aeb12b330c500e2a5136fa020eec"><div class="ttname"><a href="classSensorBase.html#a7cf3aeb12b330c500e2a5136fa020eec">SensorBase::imprimirInfo</a></div><div class="ttdeci">virtual void imprimirInfo() const =0</div><div class="ttdoc">Muestra información legible del sensor.</div></div>
+<div class="ttc" id="aclassSensorBase_html_a7fbc0a5b444f7d16cd60ba873b8ec8e4"><div class="ttname"><a href="classSensorBase.html#a7fbc0a5b444f7d16cd60ba873b8ec8e4">SensorBase::procesarLectura</a></div><div class="ttdeci">virtual void procesarLectura()=0</div><div class="ttdoc">Procesa las lecturas almacenadas aplicando la lógica específica.</div></div>
+<div class="ttc" id="aclassSensorBase_html_a7ff6fe38a284eb5fb9f55e935f6faba0"><div class="ttname"><a href="classSensorBase.html#a7ff6fe38a284eb5fb9f55e935f6faba0">SensorBase::asignarNombre</a></div><div class="ttdeci">void asignarNombre(const char *nuevoNombre)</div><div class="ttdoc">Asigna el identificador del sensor.</div><div class="ttdef"><b>Definition</b> <a href="SensorBase_8h_source.html#l00027">SensorBase.h:27</a></div></div>
+<div class="ttc" id="aclassSensorBase_html_a843ba88809ed7b78942a0a4b1c484cf5"><div class="ttname"><a href="classSensorBase.html#a843ba88809ed7b78942a0a4b1c484cf5">SensorBase::nombre</a></div><div class="ttdeci">char nombre[50]</div><div class="ttdoc">Identificador del sensor (máximo 49 caracteres más terminador).</div><div class="ttdef"><b>Definition</b> <a href="SensorBase_8h_source.html#l00059">SensorBase.h:59</a></div></div>
+<div class="ttc" id="aclassSensorBase_html_ace18410433e5b85dcd48e37a81e24859"><div class="ttname"><a href="classSensorBase.html#ace18410433e5b85dcd48e37a81e24859">SensorBase::registrarLecturaDesdeCadena</a></div><div class="ttdeci">virtual void registrarLecturaDesdeCadena(const char *valorComoTexto)=0</div><div class="ttdoc">Interpreta una lectura recibida como texto (por ejemplo, por serial).</div></div>
+<div class="ttc" id="aclassSensorBase_html_adb19329ba35a359c664b66575aab7552"><div class="ttname"><a href="classSensorBase.html#adb19329ba35a359c664b66575aab7552">SensorBase::obtenerNombre</a></div><div class="ttdeci">const char * obtenerNombre() const</div><div class="ttdoc">Devuelve el identificador del sensor.</div><div class="ttdef"><b>Definition</b> <a href="SensorBase_8h_source.html#l00043">SensorBase.h:43</a></div></div>
+<div class="ttc" id="astructNodo_html"><div class="ttname"><a href="structNodo.html">Nodo</a></div><div class="ttdoc">Nodo sencillo para listas enlazadas.</div><div class="ttdef"><b>Definition</b> <a href="Nodo_8h_source.html#l00012">Nodo.h:13</a></div></div>
+<div class="ttc" id="astructNodo_html_ac17194a31943a0f8776dfeb56d264568"><div class="ttname"><a href="structNodo.html#ac17194a31943a0f8776dfeb56d264568">Nodo::Nodo</a></div><div class="ttdeci">Nodo(const T &amp;valor)</div><div class="ttdoc">Construye un nodo con el valor indicado.</div><div class="ttdef"><b>Definition</b> <a href="Nodo_8h_source.html#l00020">Nodo.h:20</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><b>SensorBase.h</b></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="SensorBase_8h.html">SensorBase.h</a></li>
     <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

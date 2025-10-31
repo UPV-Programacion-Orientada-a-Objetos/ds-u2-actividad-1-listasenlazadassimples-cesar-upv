@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['main_2ecpp_0',['main.cpp',['../main_8cpp.html',1,'']]]
+  ['listageneral_2eh_0',['ListaGeneral.h',['../ListaGeneral_8h.html',1,'']]],
+  ['listasensor_2eh_1',['ListaSensor.h',['../ListaSensor_8h.html',1,'']]]
 ];

@@ -94,39 +94,40 @@ $(document).ready(function(){initNavTree('graph_legend.html',''); initResizable(
 <div class="contents">
 <p>Esta página explica cómo interpretar los gráficos generados por doxygen.</p>
 <p>Considérese el siguiente ejemplo: </p><div class="fragment"><div class="line"><span class="comment">/*! Clase invisible por truncamiento */</span></div>
-<div class="line"><span class="keyword">class </span>Invisible { };</div>
+<div class="line"><span class="keyword">class </span><a class="code hl_struct" href="structNodo.html">Invisible</a> { };</div>
 <div class="line"><span class="comment"></span> </div>
 <div class="line"><span class="comment">/*! Clase truncada, relación de herencia escondida */</span></div>
-<div class="line"><span class="keyword">class </span>Truncated : <span class="keyword">public</span> Invisible { };</div>
+<div class="line"><span class="keyword">class </span><a class="code hl_struct" href="structNodo.html">Truncated</a> : <span class="keyword">public</span> <a class="code hl_struct" href="structNodo.html">Invisible</a> { };</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">/* Clase no documentada con comentarios de doxygen */</span></div>
-<div class="line"><span class="keyword">class </span>Undocumented { };</div>
+<div class="line"><span class="keyword">class </span><a class="code hl_struct" href="structNodo.html">Undocumented</a> { };</div>
 <div class="line"><span class="comment"></span> </div>
 <div class="line"><span class="comment">/*! Clase que es heredera usando herencia publica */</span></div>
-<div class="line"><span class="keyword">class </span>PublicBase : <span class="keyword">public</span> Truncated { };</div>
+<div class="line"><span class="keyword">class </span><a class="code hl_struct" href="structNodo.html">PublicBase</a> : <span class="keyword">public</span> <a class="code hl_struct" href="structNodo.html">Truncated</a> { };</div>
 <div class="line"><span class="comment"></span> </div>
 <div class="line"><span class="comment">/*! Plantilla de clases */</span></div>
-<div class="line"><span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; <span class="keyword">class </span>Templ { };</div>
+<div class="line"><span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; <span class="keyword">class </span><a class="code hl_struct" href="structNodo.html">Templ</a> { };</div>
 <div class="line"><span class="comment"></span> </div>
 <div class="line"><span class="comment">/*! Clase que es heredera usando herencia protegida  */</span></div>
-<div class="line"><span class="keyword">class </span>ProtectedBase { };</div>
+<div class="line"><span class="keyword">class </span><a class="code hl_struct" href="structNodo.html">ProtectedBase</a> { };</div>
 <div class="line"><span class="comment"></span> </div>
 <div class="line"><span class="comment">/*! Clase que es heredera usando herencia privada  */</span></div>
-<div class="line"><span class="keyword">class </span>PrivateBase { };</div>
+<div class="line"><span class="keyword">class </span><a class="code hl_struct" href="structNodo.html">PrivateBase</a> { };</div>
 <div class="line"><span class="comment"></span> </div>
 <div class="line"><span class="comment">/*! Clase que es usada por la clase heredada */</span></div>
-<div class="line"><span class="keyword">class </span>Used { };</div>
+<div class="line"><span class="keyword">class </span><a class="code hl_struct" href="structNodo.html">Used</a> { };</div>
 <div class="line"><span class="comment"></span> </div>
 <div class="line"><span class="comment">/*! Superclase que hereda de varias otras clases */</span></div>
-<div class="line"><span class="keyword">class </span>Inherited : <span class="keyword">public</span> PublicBase,</div>
-<div class="line">                  <span class="keyword">protected</span> ProtectedBase,</div>
-<div class="line">                  <span class="keyword">private</span> PrivateBase,</div>
-<div class="line">                  <span class="keyword">public</span> Undocumented,</div>
-<div class="line">                  <span class="keyword">public</span> Templ&lt;int&gt;</div>
+<div class="line"><span class="keyword">class </span><a class="code hl_struct" href="structNodo.html">Inherited</a> : <span class="keyword">public</span> <a class="code hl_struct" href="structNodo.html">PublicBase</a>,</div>
+<div class="line">                  <span class="keyword">protected</span> <a class="code hl_struct" href="structNodo.html">ProtectedBase</a>,</div>
+<div class="line">                  <span class="keyword">private</span> <a class="code hl_struct" href="structNodo.html">PrivateBase</a>,</div>
+<div class="line">                  <span class="keyword">public</span> <a class="code hl_struct" href="structNodo.html">Undocumented</a>,</div>
+<div class="line">                  <span class="keyword">public</span> <a class="code hl_struct" href="structNodo.html">Templ</a>&lt;int&gt;</div>
 <div class="line">{</div>
 <div class="line">  <span class="keyword">private</span>:</div>
-<div class="line">    Used *m_usedClass;</div>
+<div class="line">    <a class="code hl_struct" href="structNodo.html">Used</a> *<a class="code hl_struct" href="structNodo.html">m_usedClass</a>;</div>
 <div class="line">};</div>
+<div class="ttc" id="astructNodo_html"><div class="ttname"><a href="structNodo.html">Nodo</a></div><div class="ttdoc">Nodo sencillo para listas enlazadas.</div><div class="ttdef"><b>Definition</b> <a href="Nodo_8h_source.html#l00012">Nodo.h:13</a></div></div>
 </div><!-- fragment --><p> Dará como resultado el siguiente gráfico:</p>
 <center><img src="graph_legend.png" alt="" class="inline"/></center><p>Las cajas del gráfico superior tienen el siguiente significado: </p>
 <ul>

@@ -97,12 +97,32 @@ $(document).ready(function(){initNavTree('Nodo_8h_source.html',''); initResizabl
   <div class="headertitle"><div class="title">Nodo.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"></div><!-- fragment --></div><!-- contents -->
+<a href="Nodo_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifndef NODO_H</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#define NODO_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="structNodo.html">   12</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structNodo.html">Nodo</a></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structNodo.html#ad2db7dbf78e797a2c4f4541619245d4f">   15</a></span>    <a class="code hl_struct" href="structNodo.html">T</a> <a class="code hl_variable" href="structNodo.html#ad2db7dbf78e797a2c4f4541619245d4f">dato</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structNodo.html#a6691e5766a27432fad708189c11f679d">   17</a></span>    <a class="code hl_struct" href="structNodo.html">Nodo&lt;T&gt;</a>* <a class="code hl_variable" href="structNodo.html#a6691e5766a27432fad708189c11f679d">siguiente</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structNodo.html#ac17194a31943a0f8776dfeb56d264568">   20</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="structNodo.html#ac17194a31943a0f8776dfeb56d264568">Nodo</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structNodo.html">T</a>&amp; <a class="code hl_struct" href="structNodo.html">valor</a>) : <a class="code hl_variable" href="structNodo.html#ad2db7dbf78e797a2c4f4541619245d4f">dato</a>(<a class="code hl_struct" href="structNodo.html">valor</a>), <a class="code hl_variable" href="structNodo.html#a6691e5766a27432fad708189c11f679d">siguiente</a>(<a class="code hl_struct" href="structNodo.html">nullptr</a>) {}</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>};</div>
+</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="astructNodo_html"><div class="ttname"><a href="structNodo.html">Nodo</a></div><div class="ttdoc">Nodo sencillo para listas enlazadas.</div><div class="ttdef"><b>Definition</b> <a href="Nodo_8h_source.html#l00012">Nodo.h:13</a></div></div>
+<div class="ttc" id="astructNodo_html_a6691e5766a27432fad708189c11f679d"><div class="ttname"><a href="structNodo.html#a6691e5766a27432fad708189c11f679d">Nodo::siguiente</a></div><div class="ttdeci">Nodo&lt; T &gt; * siguiente</div><div class="ttdoc">Apuntador al siguiente nodo de la lista.</div><div class="ttdef"><b>Definition</b> <a href="Nodo_8h_source.html#l00017">Nodo.h:17</a></div></div>
+<div class="ttc" id="astructNodo_html_ac17194a31943a0f8776dfeb56d264568"><div class="ttname"><a href="structNodo.html#ac17194a31943a0f8776dfeb56d264568">Nodo::Nodo</a></div><div class="ttdeci">Nodo(const T &amp;valor)</div><div class="ttdoc">Construye un nodo con el valor indicado.</div><div class="ttdef"><b>Definition</b> <a href="Nodo_8h_source.html#l00020">Nodo.h:20</a></div></div>
+<div class="ttc" id="astructNodo_html_ad2db7dbf78e797a2c4f4541619245d4f"><div class="ttname"><a href="structNodo.html#ad2db7dbf78e797a2c4f4541619245d4f">Nodo::dato</a></div><div class="ttdeci">T dato</div><div class="ttdoc">Dato almacenado en este nodo.</div><div class="ttdef"><b>Definition</b> <a href="Nodo_8h_source.html#l00015">Nodo.h:15</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><b>Nodo.h</b></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="Nodo_8h.html">Nodo.h</a></li>
     <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

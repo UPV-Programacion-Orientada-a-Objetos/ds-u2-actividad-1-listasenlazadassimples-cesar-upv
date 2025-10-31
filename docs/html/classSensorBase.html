@@ -1,0 +1,447 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sistema de Gestión Polimórfica de Sensores para IoT: Referencia de la clase SensorBase</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Sistema de Gestión Polimórfica de Sensores para IoT
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classSensorBase.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pro-attribs">Atributos protegidos</a> &#124;
+<a href="classSensorBase-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle"><div class="title">Referencia de la clase SensorBase<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Clase base abstracta para cualquier sensor del sistema.  
+ <a href="classSensorBase.html#details">Más...</a></p>
+
+<p><code>#include &lt;<a class="el" href="SensorBase_8h_source.html">SensorBase.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de herencia de SensorBase</div>
+<div class="dyncontent">
+<div class="center"><img src="classSensorBase__inherit__graph.png" border="0" usemap="#aSensorBase_inherit__map" alt="Inheritance graph"/></div>
+<map name="aSensorBase_inherit__map" id="aSensorBase_inherit__map">
+<area shape="rect" title="Clase base abstracta para cualquier sensor del sistema." alt="" coords="91,5,189,31"/>
+<area shape="rect" href="classSensorPresion.html" title="Gestiona lecturas enteras correspondientes a sensores de presión." alt="" coords="5,79,120,104"/>
+<area shape="poly" title=" " alt="" coords="119,42,77,80,74,76,116,38"/>
+<area shape="rect" href="classSensorTemperatura.html" title="Gestiona lecturas flotantes y su análisis particular." alt="" coords="145,79,293,104"/>
+<area shape="poly" title=" " alt="" coords="165,38,208,76,204,80,161,42"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">leyenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:a7ff6fe38a284eb5fb9f55e935f6faba0" id="r_a7ff6fe38a284eb5fb9f55e935f6faba0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNodo.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSensorBase.html#a7ff6fe38a284eb5fb9f55e935f6faba0">asignarNombre</a> (<a class="el" href="structNodo.html">const</a> <a class="el" href="structNodo.html">char</a> *<a class="el" href="structNodo.html">nuevoNombre</a>)</td></tr>
+<tr class="memdesc:a7ff6fe38a284eb5fb9f55e935f6faba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asigna el identificador del sensor.  <br /></td></tr>
+<tr class="separator:a7ff6fe38a284eb5fb9f55e935f6faba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb19329ba35a359c664b66575aab7552" id="r_adb19329ba35a359c664b66575aab7552"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNodo.html">const</a> <a class="el" href="structNodo.html">char</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSensorBase.html#adb19329ba35a359c664b66575aab7552">obtenerNombre</a> () <a class="el" href="structNodo.html">const</a></td></tr>
+<tr class="memdesc:adb19329ba35a359c664b66575aab7552"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve el identificador del sensor.  <br /></td></tr>
+<tr class="separator:adb19329ba35a359c664b66575aab7552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cf3aeb12b330c500e2a5136fa020eec" id="r_a7cf3aeb12b330c500e2a5136fa020eec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNodo.html">virtual</a> <a class="el" href="structNodo.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSensorBase.html#a7cf3aeb12b330c500e2a5136fa020eec">imprimirInfo</a> () <a class="el" href="structNodo.html">const</a> =0</td></tr>
+<tr class="memdesc:a7cf3aeb12b330c500e2a5136fa020eec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Muestra información legible del sensor.  <br /></td></tr>
+<tr class="separator:a7cf3aeb12b330c500e2a5136fa020eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c28ab5c9f2256ebc45142cd558916db" id="r_a5c28ab5c9f2256ebc45142cd558916db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNodo.html">virtual</a> <a class="el" href="structNodo.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSensorBase.html#a5c28ab5c9f2256ebc45142cd558916db">registrarLecturaInteractiva</a> ()=0</td></tr>
+<tr class="memdesc:a5c28ab5c9f2256ebc45142cd558916db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solicita una lectura desde la consola y la almacena.  <br /></td></tr>
+<tr class="separator:a5c28ab5c9f2256ebc45142cd558916db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace18410433e5b85dcd48e37a81e24859" id="r_ace18410433e5b85dcd48e37a81e24859"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNodo.html">virtual</a> <a class="el" href="structNodo.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSensorBase.html#ace18410433e5b85dcd48e37a81e24859">registrarLecturaDesdeCadena</a> (<a class="el" href="structNodo.html">const</a> <a class="el" href="structNodo.html">char</a> *<a class="el" href="structNodo.html">valorComoTexto</a>)=0</td></tr>
+<tr class="memdesc:ace18410433e5b85dcd48e37a81e24859"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpreta una lectura recibida como texto (por ejemplo, por serial).  <br /></td></tr>
+<tr class="separator:ace18410433e5b85dcd48e37a81e24859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fbc0a5b444f7d16cd60ba873b8ec8e4" id="r_a7fbc0a5b444f7d16cd60ba873b8ec8e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNodo.html">virtual</a> <a class="el" href="structNodo.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSensorBase.html#a7fbc0a5b444f7d16cd60ba873b8ec8e4">procesarLectura</a> ()=0</td></tr>
+<tr class="memdesc:a7fbc0a5b444f7d16cd60ba873b8ec8e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Procesa las lecturas almacenadas aplicando la lógica específica.  <br /></td></tr>
+<tr class="separator:a7fbc0a5b444f7d16cd60ba873b8ec8e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Atributos protegidos</h2></td></tr>
+<tr class="memitem:a843ba88809ed7b78942a0a4b1c484cf5" id="r_a843ba88809ed7b78942a0a4b1c484cf5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNodo.html">char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSensorBase.html#a843ba88809ed7b78942a0a4b1c484cf5">nombre</a> [50]</td></tr>
+<tr class="memdesc:a843ba88809ed7b78942a0a4b1c484cf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identificador del sensor (máximo 49 caracteres más terminador).  <br /></td></tr>
+<tr class="separator:a843ba88809ed7b78942a0a4b1c484cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Clase base abstracta para cualquier sensor del sistema. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="SensorBase_8h_source.html#l00013">13</a> del archivo <a class="el" href="SensorBase_8h_source.html">SensorBase.h</a>.</p>
+</div><h2 class="groupheader">Documentación de constructores y destructores</h2>
+<a id="a4e1878930538022da5ac42038d754e0e" name="a4e1878930538022da5ac42038d754e0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e1878930538022da5ac42038d754e0e">&#9670;&#160;</a></span>SensorBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SensorBase::SensorBase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="SensorBase_8h_source.html#l00016">16</a> del archivo <a class="el" href="SensorBase_8h_source.html">SensorBase.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   17</span>    {</div>
+<div class="line"><span class="lineno">   18</span>        <a class="code hl_variable" href="classSensorBase.html#a843ba88809ed7b78942a0a4b1c484cf5">nombre</a>[0] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><span class="lineno">   19</span>    }</div>
+<div class="ttc" id="aclassSensorBase_html_a843ba88809ed7b78942a0a4b1c484cf5"><div class="ttname"><a href="classSensorBase.html#a843ba88809ed7b78942a0a4b1c484cf5">SensorBase::nombre</a></div><div class="ttdeci">char nombre[50]</div><div class="ttdoc">Identificador del sensor (máximo 49 caracteres más terminador).</div><div class="ttdef"><b>Definition</b> <a href="SensorBase_8h_source.html#l00059">SensorBase.h:59</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acb58cfa69a0635dc3ef5ccb1590dc261" name="acb58cfa69a0635dc3ef5ccb1590dc261"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb58cfa69a0635dc3ef5ccb1590dc261">&#9670;&#160;</a></span>~SensorBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structNodo.html">virtual</a> SensorBase::~SensorBase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="SensorBase_8h_source.html#l00021">21</a> del archivo <a class="el" href="SensorBase_8h_source.html">SensorBase.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   21</span>{}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentación de funciones miembro</h2>
+<a id="a7ff6fe38a284eb5fb9f55e935f6faba0" name="a7ff6fe38a284eb5fb9f55e935f6faba0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ff6fe38a284eb5fb9f55e935f6faba0">&#9670;&#160;</a></span>asignarNombre()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structNodo.html">void</a> SensorBase::asignarNombre </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structNodo.html">const</a> <a class="el" href="structNodo.html">char</a> *&#160;</td>
+          <td class="paramname"><em>nuevoNombre</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Asigna el identificador del sensor. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nuevoNombre</td><td>Cadena terminada en nulo con el identificador. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="SensorBase_8h_source.html#l00027">27</a> del archivo <a class="el" href="SensorBase_8h_source.html">SensorBase.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   28</span>    {</div>
+<div class="line"><span class="lineno">   29</span>        <span class="keywordflow">if</span> (!<a class="code hl_struct" href="structNodo.html">nuevoNombre</a>)</div>
+<div class="line"><span class="lineno">   30</span>        {</div>
+<div class="line"><span class="lineno">   31</span>            <a class="code hl_variable" href="classSensorBase.html#a843ba88809ed7b78942a0a4b1c484cf5">nombre</a>[0] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><span class="lineno">   32</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   33</span>        }</div>
+<div class="line"><span class="lineno">   34</span> </div>
+<div class="line"><span class="lineno">   35</span>        <a class="code hl_function" href="structNodo.html#ac17194a31943a0f8776dfeb56d264568">std::strncpy</a>(<a class="code hl_variable" href="classSensorBase.html#a843ba88809ed7b78942a0a4b1c484cf5">nombre</a>, <a class="code hl_struct" href="structNodo.html">nuevoNombre</a>, <span class="keyword">sizeof</span>(<a class="code hl_variable" href="classSensorBase.html#a843ba88809ed7b78942a0a4b1c484cf5">nombre</a>) - 1);</div>
+<div class="line"><span class="lineno">   36</span>        <a class="code hl_variable" href="classSensorBase.html#a843ba88809ed7b78942a0a4b1c484cf5">nombre</a>[<span class="keyword">sizeof</span>(<a class="code hl_variable" href="classSensorBase.html#a843ba88809ed7b78942a0a4b1c484cf5">nombre</a>) - 1] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><span class="lineno">   37</span>    }</div>
+<div class="ttc" id="astructNodo_html"><div class="ttname"><a href="structNodo.html">Nodo</a></div><div class="ttdoc">Nodo sencillo para listas enlazadas.</div><div class="ttdef"><b>Definition</b> <a href="Nodo_8h_source.html#l00012">Nodo.h:13</a></div></div>
+<div class="ttc" id="astructNodo_html_ac17194a31943a0f8776dfeb56d264568"><div class="ttname"><a href="structNodo.html#ac17194a31943a0f8776dfeb56d264568">Nodo::Nodo</a></div><div class="ttdeci">Nodo(const T &amp;valor)</div><div class="ttdoc">Construye un nodo con el valor indicado.</div><div class="ttdef"><b>Definition</b> <a href="Nodo_8h_source.html#l00020">Nodo.h:20</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7cf3aeb12b330c500e2a5136fa020eec" name="a7cf3aeb12b330c500e2a5136fa020eec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cf3aeb12b330c500e2a5136fa020eec">&#9670;&#160;</a></span>imprimirInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structNodo.html">virtual</a> <a class="el" href="structNodo.html">void</a> SensorBase::imprimirInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Muestra información legible del sensor. </p>
+
+<p>Implementado en <a class="el" href="classSensorPresion.html#ad5181690dfb24946217e882606f04428">SensorPresion</a> y <a class="el" href="classSensorTemperatura.html#a95a263967c5f9a55da09be3b11c27c86">SensorTemperatura</a>.</p>
+
+</div>
+</div>
+<a id="adb19329ba35a359c664b66575aab7552" name="adb19329ba35a359c664b66575aab7552"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb19329ba35a359c664b66575aab7552">&#9670;&#160;</a></span>obtenerNombre()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structNodo.html">const</a> <a class="el" href="structNodo.html">char</a> * SensorBase::obtenerNombre </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Devuelve el identificador del sensor. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Cadena terminada en nulo con el nombre actual. </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="SensorBase_8h_source.html#l00043">43</a> del archivo <a class="el" href="SensorBase_8h_source.html">SensorBase.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   44</span>    {</div>
+<div class="line"><span class="lineno">   45</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classSensorBase.html#a843ba88809ed7b78942a0a4b1c484cf5">nombre</a>;</div>
+<div class="line"><span class="lineno">   46</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7fbc0a5b444f7d16cd60ba873b8ec8e4" name="a7fbc0a5b444f7d16cd60ba873b8ec8e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fbc0a5b444f7d16cd60ba873b8ec8e4">&#9670;&#160;</a></span>procesarLectura()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structNodo.html">virtual</a> <a class="el" href="structNodo.html">void</a> SensorBase::procesarLectura </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Procesa las lecturas almacenadas aplicando la lógica específica. </p>
+
+<p>Implementado en <a class="el" href="classSensorPresion.html#aff696aceb5e619529f911311a35d3c76">SensorPresion</a> y <a class="el" href="classSensorTemperatura.html#a36227dc500c6f8be7866cb0f396894b3">SensorTemperatura</a>.</p>
+
+</div>
+</div>
+<a id="ace18410433e5b85dcd48e37a81e24859" name="ace18410433e5b85dcd48e37a81e24859"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace18410433e5b85dcd48e37a81e24859">&#9670;&#160;</a></span>registrarLecturaDesdeCadena()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structNodo.html">virtual</a> <a class="el" href="structNodo.html">void</a> SensorBase::registrarLecturaDesdeCadena </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structNodo.html">const</a> <a class="el" href="structNodo.html">char</a> *&#160;</td>
+          <td class="paramname"><em>valorComoTexto</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Interpreta una lectura recibida como texto (por ejemplo, por serial). </p>
+
+<p>Implementado en <a class="el" href="classSensorPresion.html#a6ea1bb6f6d01833c0612b8e3e8d4489b">SensorPresion</a> y <a class="el" href="classSensorTemperatura.html#a6c517a69037754e731a95b983d762d44">SensorTemperatura</a>.</p>
+
+</div>
+</div>
+<a id="a5c28ab5c9f2256ebc45142cd558916db" name="a5c28ab5c9f2256ebc45142cd558916db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c28ab5c9f2256ebc45142cd558916db">&#9670;&#160;</a></span>registrarLecturaInteractiva()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structNodo.html">virtual</a> <a class="el" href="structNodo.html">void</a> SensorBase::registrarLecturaInteractiva </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Solicita una lectura desde la consola y la almacena. </p>
+
+<p>Implementado en <a class="el" href="classSensorPresion.html#a203008a88ed5e0e457f8c726ed5c36d1">SensorPresion</a> y <a class="el" href="classSensorTemperatura.html#ac871da0b1f4df74ecd41738bea6fbc0d">SensorTemperatura</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de datos miembro</h2>
+<a id="a843ba88809ed7b78942a0a4b1c484cf5" name="a843ba88809ed7b78942a0a4b1c484cf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a843ba88809ed7b78942a0a4b1c484cf5">&#9670;&#160;</a></span>nombre</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structNodo.html">char</a> SensorBase::nombre[50]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Identificador del sensor (máximo 49 caracteres más terminador). </p>
+
+<p class="definition">Definición en la línea <a class="el" href="SensorBase_8h_source.html#l00059">59</a> del archivo <a class="el" href="SensorBase_8h_source.html">SensorBase.h</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación de esta clase está generada del siguiente archivo:<ul>
+<li>include/<a class="el" href="SensorBase_8h_source.html">SensorBase.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classSensorBase.html">SensorBase</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>
